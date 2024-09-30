@@ -1,0 +1,40 @@
+#static{
+    position: static;
+    height: 300px;
+    width: 500px;
+    margin: 2px;
+    background-color: palevioletred;
+    z-index: 10;
+    padding: 100px;
+     }
+#relative{
+    position: relative;
+    height: 500px;
+    width: 400px;
+    margin: 2px;
+    background-color: blueviolet;
+    top: 200px;
+    padding: 100px;
+    }
+#absolute{
+    position: absolute;
+    height: 350px;
+    width: 400px;
+    margin: 2px;
+    background-color: crimson;
+    top: 150px;
+    left: 450px;
+    z-index: 50;
+    padding: 100px;
+}
+#sticky{
+    position: sticky;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    background-color: rgb(195, 36, 235);
+    top: 100px;
+    left: 700px;
+    z-index: 100;
+    padding: 100px;
+}
