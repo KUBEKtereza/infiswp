@@ -15,12 +15,15 @@
 
 <body>
     <main class="container">
-        <h1>Hunde</h1>
+
+
+
+        <h1 class="position-absolute start-50 top-0 translate-middle-x">Hunde</h1>
 
         <header>
 
             <section>
-                <h2><strong>Alles über Hunde</strong></h2>
+                <h3 class="my-5"><strong>Alles über Hunde</strong></h3>
                 Hier finden Sie alles, was sie über Tiere wissen möchten.
             </section>
             <nav>
@@ -43,38 +46,112 @@
                 <li>Pudel</li>
                 <li>Dobermann</li>
             </ul>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Dropdown button
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+
+            <div class="mb-5 spinner-grow text-info" role="status">
+                <span class="visually-hidden">Loading...</span>
             </div>
 
+            <div class="mb-5 spinner-grow text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="mb-5 spinner-grow text-secondary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="mb-5 spinner-grow text-success" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="mb-5 spinner-grow text-danger" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="mb-5 spinner-grow text-warning" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="mb-5 spinner-grow text-info" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="mb-5 spinner-grow text-light" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="mb-5 spinner-grow text-dark" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
 
+            <div class="mb-4 progress" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 50%"></div>
+            </div>
+
+            <div class="card mb-4" style="width: 18rem;">
+                <img src="https://media-eu.husse.com/media/47/4e/52/1607076510/iStock-1191563958.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pudel</h5>
+                    <p class="card-text">Poodles' name descended from the German word Pudelhund, which means “splash
+                        dog.” Poodles are fantastic swimmers and are used for hunting waterfowl, like ducks and geese.
+                    </p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+            <div class="card " style="width: 18rem;">
+                <img src="https://magazin.wirliebenhunter.de/assets/images/Dobermann-II.jpg" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Dobermann</h5>
+                    <p class="card-text">The Doberman Pinscher (Doberman) is a powerful and muscular member of the
+                        Working
+                        Group developed for police and military work and to be a protector and companion in the home.
+
+                    </p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+            <p>
+                <button type="button" class="btn btn-primary mb-1 position-relative btn ">
+                    Hunde
+                    <span
+                        class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                        <span class="visually-hidden">New alerts</span>
+
+                    </span>
+                </button>
+
+
+
+
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle mb-3" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Hunderassen
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Schäferhund</a></li>
+                    <li><a class="dropdown-item" href="#">Chihuahua</a></li>
+                    <li><a class="dropdown-item" href="#">Bulldogge</a></li>
+                </ul>
+            </div>
             <article class="Leichte Hunde">
                 <h3>Die 3 pflegeleichtesten Hunde</h3>
 
 
             </article>
 
+            <div class="border border-4 border-end mx-1 p-2 rounded">
+                <h3>Links</h3>
+                <ol>
+                    <li><a
+                            href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.futterhaus.de%2Fr%2Fpudel%2F&psig=AOvVaw01myf704EFsG6WaueTFIiP&ust=1726665540756000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJCOqMOIyogDFQAAAAAdAAAAABAE">Pudel</a>
+                    </li>
+                    <li><a
+                            href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.futterhaus.de%2Fr%2Fgolden-retriever%2F&psig=AOvVaw3X3mSr4hfeZJoKTCF-sjJY&ust=1726666202907000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMCN2v6KyogDFQAAAAAdAAAAABAI">Golden
+                            Retriever</a></li>
+                    <li><a
+                            href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dasfutterhaus.at%2Fr%2Flabrador-retriever%2F&psig=AOvVaw1VaCvv5hwnMZCOFe-lN0hb&ust=1726666286300000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLjp3aaLyogDFQAAAAAdAAAAABAE">Labrador</a>
+                    </li>
+                </ol>
+            </div>
 
-            <h3>Links</h3>
-            <ol>
-                <li><a
-                        href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.futterhaus.de%2Fr%2Fpudel%2F&psig=AOvVaw01myf704EFsG6WaueTFIiP&ust=1726665540756000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJCOqMOIyogDFQAAAAAdAAAAABAE">Pudel</a>
-                </li>
-                <li><a
-                        href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.futterhaus.de%2Fr%2Fgolden-retriever%2F&psig=AOvVaw3X3mSr4hfeZJoKTCF-sjJY&ust=1726666202907000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMCN2v6KyogDFQAAAAAdAAAAABAI">Golden
-                        Retriever</a></li>
-                <li><a
-                        href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dasfutterhaus.at%2Fr%2Flabrador-retriever%2F&psig=AOvVaw1VaCvv5hwnMZCOFe-lN0hb&ust=1726666286300000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLjp3aaLyogDFQAAAAAdAAAAABAE">Labrador</a>
-                </li>
-            </ol>
 
             <div>
                 <blockquote
