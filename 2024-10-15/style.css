@@ -1,0 +1,254 @@
+body {
+    background-color: #5286C1;
+    color: white;
+}
+
+.Oben {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 875px;
+    justify-content: space-between;
+    padding-left: 18px;
+    background-color: #4371a3;
+    margin: 0;
+}
+
+.Oben a {
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    height: 18px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: lightgrey;
+    color: lightgrey;
+}
+
+.li {
+    display: inline-block;
+    unicode-bidi: isolate;
+    text-decoration: none;
+    padding: 4px;
+}
+
+.Oben li {
+    flex: 0 0 auto;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 4px;
+}
+
+.top {
+    display: flex;
+    height: 77px;
+    width: 875px;
+    text-align: center;
+}
+
+.Logo {
+    justify-content: flex-end;
+    margin-left: 0;
+    width: 257px;
+}
+
+.top .Logo {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    margin-left: 22px;
+}
+
+.top .Logo .Neu {
+    color: #ffffff;
+    font-family: "ORF Universal", -apple-system, BlinkMacSystemFont, Arial, Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 1.625rem;
+    text-transform: lowercase;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    top: -2px;
+}
+
+.Wetter {
+    display: flex;
+    align-items: center;
+}
+
+.top .Wetter {
+    display: flex;
+    flex: 1 1 auto;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.visible {
+    display: flex;
+}
+
+.dropdown-menu {
+    background-color: #09406b;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: center;
+}
+
+.Text {
+    font-family: "ORF Universal Condensed", "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif-condensed, "ORF Fallback Roboto Condensed";
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.Viennale a {
+    flex: 0 0 auto;
+    width: 153px;
+    text-align: right;
+    margin-left: auto;
+    display: block;
+    margin-right: 0;
+    height: 77px;
+}
+
+.Top .Viennale a {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Text a {
+    text-decoration: none;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+a {
+    color: #fff;
+}
+
+.Viennale a img {
+    flex: 0 0 auto;
+    width: 153px;
+    text-align: right;
+    margin-left: auto;
+    display: block;
+    margin-right: 0;
+    height: 77px;
+}
+
+.Glocke {
+    display: flex;
+    justify-content: flex-end;
+    width: 875px;
+    background-color: #4371a3;
+    height: 35px;
+}
+
+.Glocken-icon {
+    display: flex;
+    justify-content: flex-end;
+    height: 35px;
+    width: 35px;
+}
+
+.Glocken-icon img:hover {
+    background-color: #134a75;
+}
+
+.Bilder {
+    width: 875px;
+    height: 271px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.Mitte {
+    width: 875px;
+    height: 3130px;
+    background-color: white;
+}
+
+.FrauBild {
+    position: absolute;
+    left: 175px;
+}
+
+.PolizeiBild {
+    position: absolute;
+    top: 138px;
+    left: 350px;
+}
+
+.RauchBild {
+    position: absolute;
+    height: 271px;
+}
+
+.AutoBild {
+    position: absolute;
+    top: 138px;
+    left: 175px;
+}
+
+.MannBild {
+    position: absolute;
+    left: 704px;
+}
+
+.ZimmerBild {
+    position: absolute;
+    left: 527px;
+}
+
+.VerhaftetBild {
+    position: absolute;
+    left: 704px;
+    top: 138px;
+}
+
+.US-Wahl {
+    position: absolute;
+    top: 420px;
+    left: 921px;
+}
+
+.VielText {
+    padding-top: 24px;
+    width: 704px;
+    margin: 0;
+    padding-bottom: 2.5rem;
+}
+
+.AuslandText {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.AuslandTitel {
+    width: 161px;
+    font-family: "ORF Universal SC", "ORF Fallback SC", sans-serif;
+    text-align: right;
+    margin: 4px 10px 0 0;
+    padding: 0;
+    color: #222;
+    font-weight: 400;
+    font-size: 1.125rem;
+    flex: 0 0 auto;
+    border-left: none;
+}
+
+.container {
+    background-color: #5286C1;
+}
