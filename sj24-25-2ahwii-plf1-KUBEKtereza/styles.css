@@ -1,0 +1,45 @@
+:root {
+    --color-primary: #00ad6a;
+    --color-secondary: #eafaf1;
+    --color-accent: #1fe374;
+    --color-dark: #080c16;
+    --color-light: #d6dae5;
+    --color-background: #fcfcfc;
+}
+
+body{
+    background:  #eafaf1;
+    color: #080c16;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+.Oben {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 400px;
+    justify-content: space-evenly;
+    padding-left: 18px;
+    margin: 0;
+}
+
+
+.Oben a {
+    display: inline-block;
+    color: #00ad6a;
+    cursor: pointer;
+    height: 18px;
+    text-decoration: none;
+}
+
+
+
+ 
