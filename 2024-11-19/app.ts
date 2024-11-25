@@ -1,8 +1,9 @@
 
 import { Database } from "https://deno.land/x/sqlite3/mod.ts";
 import { assert } from "https://deno.land/std/testing/asserts.ts";
-const dataPath = '../nmap-datenfiles';
+const dataPath = './nmap-datenfiles';
 const db = new Database("nmap_data.db");
+const outputFilePath = './output.csv';
 
 async function createTable() {
     //    await db.query(`
@@ -21,6 +22,7 @@ function parseDate(dateStr: string): Date {
 
 async function main() {
     await createTable();
+    let outputData = '';
     try {
         const dirEntries = await Deno.readDir(dataPath);
         //const promiseArray = [];
@@ -39,17 +41,18 @@ async function main() {
             const filePath = `${dataPath}/${dirEntry.name}`;
             let host = undefined;
             let mac = undefined;
-            for (const line of (await Deno.readTextFile(filePath)).split('\n')) {
-                if (line.trim() === '' || line.startsWith('Starting Nmap')
-                    || line.startsWith('Nmap done') || line.startsWith('Host is up')) {
+            for (const Line of (await Deno.readTextFile(filePath)).split('\n')) {
+                const cleanedLine = Line.replace(/\r/g, '');
+                if (cleanedLine.trim() === '' || cleanedLine.startsWith('Starting Nmap')
+                    || cleanedLine.startsWith('Nmap done') || cleanedLine.startsWith('Host is up')) {
                     continue;
                 }
-                if (line.startsWith('Nmap scan report for ')) {
-                    host = line.split(' ')[4];
+                if (cleanedLine.startsWith('Nmap scan report for ')) {
+                    host = cleanedLine.split(' ')[4];
                     continue;
                 }
-                if (line.startsWith('MAC Address: ')) {
-                    mac = line.split(' ')[2].toLowerCase();
+                if (cleanedLine.startsWith('MAC Address: ')) {
+                    mac = cleanedLine.split(' ')[2].toLowerCase();
                     //console.log(`${date.toISOString()};${host};${mac}`);
                     /* promiseArray.push(db.query("INSERT INTO scans (date, host, mac) VALUES (?, ?, ?)", [
                          date.toISOString(),
@@ -57,14 +60,18 @@ async function main() {
                          mac,
                      ]));
                      promiseArray.length === 7 && console.log(promiseArray);*/
-                    console.log(`${date.toISOString()};${host};${mac}`);
+                     outputData += `${date.toISOString()};${host};${mac}\n`;
+                    //console.log(`${date.toISOString()};${host};${mac}`);
                 }
             }
         }
+        await Deno.writeTextFile(outputFilePath, outputData);
+
         //console.log(`waiting for Insertion ${promiseArray.length} rows`);
         //await Promise.all(promiseArray);
         //console.log(`Inserted ${promiseArray.length} rows`);
-    } catch (err) {
+    } 
+    catch (err) {
         console.error('Error reading the file:', err);
     }
 }
