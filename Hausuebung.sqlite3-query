@@ -1,0 +1,7 @@
+-- database: ./2024-12-10/w3schools.sqlite
+
+SELECT * FROM products ORDER BY price asc;
+
+SELECT * FROM customers WHERE Country = 'Mexico';
+
+SELECT * FROM customers WHERE City = 'London';
